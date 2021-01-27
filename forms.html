@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center;">
+     <form name="contactForm" id="form" onsubmit="return validateForm()" action=" https://syedsali.github.io/the-dom/./forms.html" method="get" autocomplete="on">
+        <br>
+        <h1>Application Form</h1>
+        <div class="row">
+            <label class="leftside">Full Name:</label>
+            <input type="text" name="name" required>
+            <div class="error" id="nameErr"></div>
+        </div>
+        <br>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" name="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <br>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="number" name="mobile">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <br>
+        <div class="row">
+            <label>Password</label>
+            <input type="password" name="password">
+            <div class="error" id="PasswordErr"></div>
+        </div>
+       <br>
+        <div class="row">
+            <label>Country</label>
+            <select name="country">
+                <option>Select</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+                <option>United States</option>
+                <option>Greenland</option>
+            </select> 
+            <div class="error" id="countryErr"></div>
+        </div>
+        <br>
+        <div class="row">
+            <label>Gender</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label> 
+            </div>
+            <div class="error" id="genderErr"></div>
+        </div>
+        <br>
+        <div class="row">
+            <label>Hobbies <i>(Optional)</i></label>
+            <div class="form-inline">
+                <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+                <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>  
+            </div>
+        </div>    
+        <br>    
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <!-- <br>
+        <p id="main">which finger i am holding?</p>
+        <input type="text" id="guess"><br>
+        <br>
+        <button id="button">Guess</button> 
+
+    
+
+        document.getElementById("button").onclick = function(){
+            var randomNumber = Math.random();
+            randomNumber = randomNumber * 6;
+            randomNumber = Math.floor(randomNumber);
+
+            if (document.getElementById("guess").value == randomNumber){
+                alert("Well Done!");
+            }
+            else {
+                alert("Try next time" + " but the answer is " + randomNumber);
+            }
+        } -->
+
+
+        <script src="forms.js"></script>
+
+</body>
+</html>
